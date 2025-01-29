@@ -1,0 +1,131 @@
+<!--Exercise 1-->
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>My Tailwind CSS Project</title>  
+    <!-- Tailwind CSS CDN -->    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        *{
+            font-family: "Sour Gummy", serif;
+        }
+        body {  
+  background-color: antiquewhite;  
+    }  
+
+    html {  
+            scroll-behavior: smooth;  
+        }  
+      </style>
+</head>  
+<body class="bg-gray-100">  
+    <!-- Header Section -->  
+    <header class="bg-white shadow">  
+        <div class="container mx-auto flex justify-between items-center p-4">  
+            <h1 class="text-xl font-bold">Maurice Mwenda Ndwiga</h1>  
+            <nav>  
+                <ul class="flex space-x-4">  
+                    <li><a href="#home" class="hover:text-purple-500">Home</a></li>  
+                    <li><a href="#projects" class="hover:text-purple-500">Projects</a></li>  
+                    <li><a href="#contact" class="hover:text-purple-500">Contact</a></li>  
+                </ul>  
+            </nav>  
+        </div>  
+    </header>  
+
+    <!-- Hero Section -->  
+    <section id="home" class="relative h-96 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">  
+        <div class="absolute inset-0 bg-black opacity-50"></div>  
+        <div class="container mx-auto flex items-center justify-center h-full">  
+            <h2 class="text-white text-4xl md:text-5xl font-bold text-center">Hi, I'm <span class="text-yellow-700">Maurice Mwenda</span></h2>  
+        </div>  
+    </section>  
+
+    <!-- Skills Section -->  
+    <section id="skills" class="py-10">  
+        <div class="container mx-auto text-center">  
+            <h3 class="text-3xl font-bold mb-4">My Skills</h3>  
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">  
+                <div class="bg-white hover:bg-red-400 p-4 text-red-400 hover:text-white rounded-lg shadow ">  
+                    <h4 class="font-semibold ">HTML</h4>  
+                </div>  
+                <div class="bg-white hover:bg-blue-400  p-4 text-blue-400 hover:text-white rounded-lg shadow">  
+                    <h4 class="font-semibold ">CSS</h4>  
+                </div>  
+                <div class="bg-white hover:bg-yellow-400  p-4 text-yellow-400 hover:text-white rounded-lg shadow">  
+                    <h4 class="font-semibold ">JavaScript</h4>  
+                </div>  
+                <div class="bg-white hover:bg-blue-200  p-4 text-blue-200 hover:text-white rounded-lg shadow">  
+                    <h4 class="font-semibold ">Tailwind CSS</h4>  
+                </div>  
+                <div class="bg-white hover:bg-green-400  p-4 text-green-400 hover:text-white rounded-lg shadow">  
+                    <h4 class="font-semibold ">Node.js</h4>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Projects Section -->  
+    <section id="projects" class="py-10 bg-gray-200">  
+        <div class="container mx-auto text-center">  
+            <h3 class="text-3xl font-bold mb-4">My Projects</h3>  
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">  
+                <div class="bg-white rounded-lg shadow p-4">  
+                    <img src="https://images.pexels.com/photos/6215002/pexels-photo-6215002.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project 1" class="w-full h-40 object-cover rounded-t-lg">  
+                    <h4 class="font-semibold mt-2">Project 1</h4>  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto culpa quasi explicabo sapiente illum iure mollitia cumque repudiandae. Totam vel eveniet eaque dignissimos tempore assumenda nulla labore excepturi aliquam.</p>  
+                </div>  
+                <div class="bg-white rounded-lg shadow p-4">  
+                    <img src="https://images.pexels.com/photos/8372627/pexels-photo-8372627.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project 2" class="w-full h-40 object-cover rounded-t-lg">  
+                    <h4 class="font-semibold mt-2">Project 2</h4>  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto culpa quasi explicabo sapiente illum iure mollitia cumque repudiandae. Totam vel eveniet eaque dignissimos tempore assumenda nulla labore excepturi aliquam.</p>  
+                </div>  
+                <div class="bg-white rounded-lg shadow p-4">  
+                    <img src="https://images.pexels.com/photos/6120207/pexels-photo-6120207.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project 3" class="w-full h-40 object-cover rounded-t-lg">  
+                    <h4 class="font-semibold mt-2">Project 3</h4>  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto culpa quasi explicabo sapiente illum iure mollitia cumque repudiandae. Totam vel eveniet eaque dignissimos tempore assumenda nulla labore excepturi aliquam.</p>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Contact Form -->  
+    <section id="contact" class="py-10">  
+        <div class="container mx-auto text-center">  
+            <h3 class="text-3xl font-bold mb-4">Contact Me</h3>  
+            <form action="#" method="POST" class="max-w-md mx-auto">  
+                <div class="mb-4">  
+                    <input type="text" placeholder="Your Name" required class="w-full p-2 border border-gray-300 rounded" />  
+                </div>  
+                <div class="mb-4">  
+                    <input type="email" placeholder="Your Email" required class="w-full p-2 border border-gray-300 rounded" />  
+                </div>  
+                <div class="mb-4">  
+                    <textarea placeholder="Your Message" required class="w-full p-2 border border-gray-300 rounded"></textarea>  
+                </div>  
+                <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Send Message</button>  
+            </form>  
+        </div>  
+    </section>  
+
+    <!-- Footer -->  
+    <footer class="bg-yellow-100 py-4">  
+        <div class="container mx-auto text-center">  
+            <div class="flex justify-center space-x-4 mb-2">  
+                <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-instagram"></i>
+                <a href="#" class="hover:text-grey-500"><i class="fa-brands fa-x-twitter"></i></a>  
+                <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-linkedin"></i></a>  
+            </div>  
+            <p class="text-gray-600">© 2025 MAURICE. All rights reserved.</p>  
+        </div>  
+    </footer>  
+
+    <script src="https://kit.fontawesome.com/27ab9d13e4.js" crossorigin="anonymous"></script>
+</body>    
+</html>
